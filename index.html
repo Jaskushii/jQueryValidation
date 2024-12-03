@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wojciech Jaśkiewicz walidacja</title>
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/demo/site-demos.css">
 </head>
 <style>
-    
+    body{
+        background-color: 	#d5e1e9;
+    }
     *{
         margin: 0;
         text-align: center;
-        background-color: beige;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
     }
-div{
+#container{
     margin-top: 20px;
-    
-    
+    border-radius: 25px;
+    background-color:#e8e5e5;
     border: 1px solid rgba(0,0,0,0.25);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
     margin: auto;
@@ -28,8 +30,8 @@ div{
     
 }
     input{
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #ccc; /* default border style */
+  border-radius: 5px; /* apply a 5px border radius */
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
   border: 1px solid gray;
 }
@@ -47,7 +49,7 @@ div{
     
 </style>
 <body>
-    <div>
+    <div id="container">
     <form id="formularz"><br><br>
         <label for="name">Imię:</label><br>
         <input type="text" id="name" name="name" required><br><br>
