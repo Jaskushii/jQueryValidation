@@ -17,23 +17,23 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
     }
-#container{
-    margin-top: 20px;
-    border-radius: 25px;
-    background-color:#e8e5e5;
-    border: 1px solid rgba(0,0,0,0.25);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
-    margin: auto;
-    margin-top: 40px;
-    width: 700px;
+    #container{
+        margin-top: 20px;
+        border-radius: 25px;
+        background-color:#e8e5e5;
+        border: 1px solid rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+        margin: auto;
+        margin-top: 40px;
+        width: 700px;
     
     
 }
     input{
-  border: 1px solid #ccc; /* default border style */
-  border-radius: 5px; /* apply a 5px border radius */
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
-  border: 1px solid gray;
+        border: 1px solid #ccc; /* default border style */
+        border-radius: 5px; /* apply a 5px border radius */
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+        border: 1px solid gray;
 }
     label, input{
         padding:10px;
@@ -85,17 +85,17 @@
                 },
                 messages: {
                     name: {
-                        required: "</br>Proszę podać imię",
-                        minlength: "</br>Imię musi mieć co najmniej 2 znaki"
+                        required: "</br><p style='color: red;'>Proszę podać imię</p>",
+                        minlength: "</br><p style='color: red;'>Imię musi mieć co najmniej 2 znaki</p>"
                     },
                     email: {
-                        required: "</br>Proszę podać adres email",
-                        email: "</br>Proszę podać prawidłowy adres email"
+                        required: "</br><p style='color: red;'>Proszę podać adres email</p>",
+                        email: "</br><p style='color: red;'>Proszę podać prawidłowy adres email</p>"
                     },
                     age: {
-                        required: "</br>Proszę podać wiek",
-                        number: "Proszę podać prawidłowy wiek",
-                        min: "</br>Musisz mieć co najmniej 18 lat"
+                        required: "</br><p style='color: red;'>Proszę podać wiek</p>",
+                        number: "<p style='color: red;'>Proszę podać prawidłowy wiek</p>",
+                        min: "</br><p style='color: red;'>Musisz mieć co najmniej 18 lat</p>"
                     }
                 }
             });
